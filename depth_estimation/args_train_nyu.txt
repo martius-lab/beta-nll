@@ -1,0 +1,31 @@
+--bs 3
+--dataset nyu
+--loss MSE
+--beta 0.5
+--lr 0.000357
+--wd 0.1
+--div_factor 25
+--final_div_factor 100
+--epochs 25
+--workers 11
+--name UnetAdaptiveBins
+--n_bins 256
+--norm linear
+--w_chamfer 0.1
+--root logs/
+--data_path ./data/NYUv2/data
+--gt_path ./data/NYUv2/data
+--filenames_file ./train_test_inputs/nyudepthv2_train_files_with_gt.txt
+--input_height 416
+--input_width 544
+--min_depth 0.001
+--max_depth 10
+--do_random_rotate
+--degree 2.5
+--validate_every 100
+--data_path_eval ./data/NYUv2/official_splits/test/
+--gt_path_eval ./data/NYUv2/official_splits/test/
+--filenames_file_eval ./train_test_inputs/nyudepthv2_test_files_with_gt.txt
+--min_depth_eval 1e-3
+--max_depth_eval 10
+--eigen_crop

@@ -1,0 +1,9 @@
+--data_path_eval ./data/NYUv2//NYUv2/official_splits/test/
+--gt_path_eval ./data/NYUv2//NYUv2/official_splits/test/
+--filenames_file_eval ./train_test_inputs/nyudepthv2_test_files_with_gt.txt
+--min_depth_eval 1e-3
+--max_depth_eval 10
+--eigen_crop
+--dataset nyu
+--save_dir ./logs/predictions_nyu
+--model UnetGaussian
